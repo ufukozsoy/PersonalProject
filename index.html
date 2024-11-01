@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ufuk Özsoy - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="animate__animated animate__fadeIn">Ufuk Özsoy</h1>
+            <p>Data Analyst | DevOps Engineer | Cloud Engineer</p>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">Dark Mode</button>
+            <nav aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate IT professional with a strong background in data analysis and software development.</p>
+        <img src="images/profile.jpg" alt="Profile Picture of Ufuk Özsoy" class="profile-img">
+        <a href="assets/resume.pdf" target="_blank" class="download-btn" aria-label="Download Resume">Download My Resume</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="filter-buttons" aria-label="Project Filters">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="data-analysis">Data Analysis</button>
+            <button class="filter-btn" data-category="devops">DevOps</button>
+            <button class="filter-btn" data-category="web-development">Web Development</button>
+        </div>
+        <div class="project-list">
+            <div class="project" data-category="data-analysis">
+                <img src="images/project1.jpg" alt="Screenshot of Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+                <a href="#" class="project-link" aria-label="View Project 1">View Project</a>
+            </div>
+            <div class="project" data-category="devops">
+                <img src="images/project2.jpg" alt="Screenshot of Project 2">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+                <a href="#" class="project-link" aria-label="View Project 2">View Project</a>
+            </div>
+            <div class="project" data-category="web-development">
+                <img src="images/project3.jpg" alt="Screenshot of Project 3">
+                <h3>Project 3</h3>
+                <p>Description of project 3.</p>
+                <a href="#" class="project-link" aria-label="View Project 3">View Project</a>
+            </div>
+            <div class="project" data-category="data-analysis">
+                <img src="images/project4.jpg" alt="Screenshot of Project 4">
+                <h3>Project 4</h3>
+                <p>Description of project 4.</p>
+                <a href="#" class="project-link" aria-label="View Project 4">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>Data Analysis</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>DevOps</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Web Development</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Cloud Computing</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+            </div>
+        </div>
+        <h2>Data Analysis Chart</h2>
+        <canvas id="myChart" width="400" height="200"></canvas>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div id="testimonial-list" class="testimonial-list">
+            <!-- Add testimonials here dynamically or as a list of quotes -->
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-list">
+            <a href="blog/post1.html">Blog Post 1</a>
+            <a href="blog/post2.html">Blog Post 2</a>
+            <a href="blog/post3.html">Blog Post 3</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="contact.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ufuk Özsoy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
