@@ -3,147 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ufuk Özsoy - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Ufuk Özsoy - Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+
+    </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="container">
-            <h1 class="animate__animated animate__fadeIn">Ufuk Özsoy</h1>
-            <p>Data Analyst | DevOps Engineer | Cloud Engineer</p>
-            <button id="theme-toggle" aria-label="Toggle Dark Mode">Dark Mode</button>
-            <nav aria-label="Primary Navigation">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Ufuk Özsoy</h1>
+        <p>Experienced engineering professional with a foundation in data analysis, software development, and IT systems.</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="cta-button">Get In Touch</a>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
-        <p>Hello! I'm a passionate IT professional with a strong background in data analysis and software development.</p>
-        <img src="images/profile.jpg" alt="Profile Picture of Ufuk Özsoy" class="profile-img">
-        <a href="assets/resume.pdf" target="_blank" class="download-btn" aria-label="Download Resume">Download My Resume</a>
+        <img src="profile.jpg" alt="Ufuk Özsoy" class="about-image">
+        <p>Adept at leveraging technical skills to solve complex problems, extract and interpret data, and develop innovative solutions. Eager to apply my analytical abilities and technical expertise to contribute to dynamic projects and drive efficiency within a forward-thinking organization.</p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="filter-buttons" aria-label="Project Filters">
-            <button class="filter-btn" data-category="all">All</button>
-            <button class="filter-btn" data-category="data-analysis">Data Analysis</button>
-            <button class="filter-btn" data-category="devops">DevOps</button>
-            <button class="filter-btn" data-category="web-development">Web Development</button>
-        </div>
-        <div class="project-list">
-            <div class="project" data-category="data-analysis">
-                <img src="images/project1.jpg" alt="Screenshot of Project 1">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-                <a href="#" class="project-link" aria-label="View Project 1">View Project</a>
-            </div>
-            <div class="project" data-category="devops">
-                <img src="images/project2.jpg" alt="Screenshot of Project 2">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
-                <a href="#" class="project-link" aria-label="View Project 2">View Project</a>
-            </div>
-            <div class="project" data-category="web-development">
-                <img src="images/project3.jpg" alt="Screenshot of Project 3">
-                <h3>Project 3</h3>
-                <p>Description of project 3.</p>
-                <a href="#" class="project-link" aria-label="View Project 3">View Project</a>
-            </div>
-            <div class="project" data-category="data-analysis">
-                <img src="images/project4.jpg" alt="Screenshot of Project 4">
-                <h3>Project 4</h3>
-                <p>Description of project 4.</p>
-                <a href="#" class="project-link" aria-label="View Project 4">View Project</a>
+    <section id="skills" data-aos="fade-up">
+        <h2>Technical Skills</h2>
+        <div class="skill">
+            <h3>Data Analysis</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-list">
-            <div class="skill">
-                <h3>Data Analysis</h3>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>DevOps</h3>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>Web Development</h3>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>Cloud Computing</h3>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                </div>
-            </div>
+    <section id="experience" data-aos="fade-up">
+        <h2>Work Experience</h2>
+        <div>
+            <h3>Head of Engineering Laboratories</h3>
+            <p>Nile University of Nigeria, Abuja, Nigeria (04.2018 – 03.2019)</p>
+            <ul>
+                <li>Managed engineering lab facilities, ensuring safety and functionality.</li>
+                <li>Supervised bachelor's students contributing to the development of the laboratory and practical classes.</li>
+            </ul>
         </div>
-        <h2>Data Analysis Chart</h2>
-        <canvas id="myChart" width="400" height="200"></canvas>
+        <div>
+            <h3>Lecturer</h3>
+            <p>Nile University of Nigeria, Abuja, Nigeria (12.2016 – 03.2019)</p>
+            <ul>
+                <li>Conducted lectures and facilitated classroom discussions for undergraduate courses.</li>
+                <li>Assisted in faculty research projects by collecting and analyzing data.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Deputy Head of Civil Engineering Department</h3>
+            <p>Nile University of Nigeria, Abuja, Nigeria (09.2014 – 03.2019)</p>
+            <ul>
+                <li>Led departmental operations, contributing to curriculum development and academic administration.</li>
+                <li>Ensured compliance with academic and regulatory standards, enhancing the quality of education and research.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Deputy Registrar</h3>
+            <p>Nile University of Nigeria, Abuja, Nigeria (12.2012 – 09.2014)</p>
+            <ul>
+                <li>Managed administrative functions, ensuring smooth operation and compliance with university policies.</li>
+                <li>Coordinated communication between departments and facilitated the implementation of new academic regulations.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Project Engineer</h3>
+            <p>Macrocosm, Richardson-TX, USA (11.2010 – 06.2012)</p>
+            <ul>
+                <li>Conceptualized and executed design phases of construction projects, employing innovative solutions to meet objectives.</li>
+                <li>Collaborated with subcontractors, ensuring strong communication and project success within defined timelines and budgetary constraints.</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
+    <section id="education" data-aos="fade-up">
+        <h2>Education</h2>
+        <div>
+            <h3>BSc Computing</h3>
+            <p>Edinburgh Napier University, Edinburgh, UK (01.2021 – 07.2023)</p>
+            <ul>
+                <li>Software development, data analysis, problem-solving, databases, data visualization.</li>
+                <li>Python, SQL, HTML, CSS, JavaScript, Java.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>MEng Electrical and Electronics Engineering</h3>
+            <p>Nile University of Nigeria, Abuja, Nigeria (12.2014 – 12.2016)</p>
+            <ul>
+                <li>Circuit design, signal processing, power systems, MATLAB.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>BSc Civil Engineering</h3>
+            <p>Balikesir University, Balikesir, Turkey (09.2004 – 10.2009)</p>
+            <ul>
+                <li>Structural design, construction management, geotechnics.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <h2>Completed Projects</h2>
+        <div class="project">
+            <h3>Build a Full Website using WordPress</h3>
+            <img src="images/wordpress_project.jpg" alt="WordPress Project">
+            <p>Description: Developed a fully functional website using WordPress, focusing on user experience and responsive design.</p>
+            <p>Technologies: WordPress, HTML, CSS</p>
+        </div>
+        <div class="project">
+            <h3>Build Your Portfolio Website with HTML and CSS</h3>
+            <img src="images/portfolio_project.jpg" alt="Portfolio Project">
+            <p>Description: Created a personal portfolio website to showcase my skills and projects.</p>
+            <p>Technologies: HTML, CSS</p>
+        </div>
+        <div class="project">
+            <h3>Creating a Multi-Page App using HTML & CSS</h3>
+            <img src="images/multipage_app.jpg" alt="Multi-Page App">
+            <p>Description: Developed a multi-page application with a focus on clean design and user navigation.</p>
+            <p>Technologies: HTML, CSS</p>
+        </div>
+        <div class="project">
+            <h3>Creating a Quiz Game using Vanilla JavaScript</h3>
+            <img src="images/quiz_game.jpg" alt="Quiz Game">
+            <p>Description: Built an interactive quiz game using vanilla JavaScript, enhancing my understanding of DOM manipulation and event handling.</p>
+            <p>Technologies: JavaScript, HTML, CSS</p>
+        </div>
+        <div class="project">
+            <h3>Create Your First Automation Script Using Selenium and Java</h3>
+            <img src="images/selenium_script.jpg" alt="Selenium Script">
+            <p>Description: Developed an automation script to perform web testing using Selenium and Java.</p>
+            <p>Technologies: Selenium, Java</p>
+        </div>
+        <div class="project">
+            <h3>Build Your First React Website</h3>
+            <img src="images/react_website.jpg" alt="React Website">
+            <p>Description: Created a dynamic and responsive website using React, focusing on component-based architecture.</p>
+            <p>Technologies: React, JavaScript, HTML, CSS</p>
+        </div>
+        <div class="project">
+            <h3>Jenkins: Automating Your Delivery Pipeline</h3>
+            <img src="images/jenkins_pipeline.jpg" alt="Jenkins Pipeline">
+            <p>Description: Implemented a CI/CD pipeline using Jenkins to automate the build and deployment process.</p>
+            <p>Technologies: Jenkins, Git, GitHub</p>
+        </div>
+        <div class="project">
+            <h3>AWS S3 Basics</h3>
+            <img src="images/aws_s3.jpg" alt="AWS S3">
+            <p>Description: Gained hands-on experience with AWS S3, learning how to store and manage data in the cloud.</p>
+            <p>Technologies: AWS S3</p>
+        </div>
+        <div class="project">
+            <h3>Python for Data Analysis: Pandas & NumPy</h3>
+            <img src="images/python_data_analysis.jpg" alt="Python Data Analysis">
+            <p>Description: Analyzed datasets using Python libraries such as Pandas and NumPy, focusing on data manipulation and visualization.</p>
+            <p>Technologies: Python, Pandas, NumPy</p>
+        </div>
+        <div class="project">
+            <h3>Getting Started with Power BI Desktop</h3>
+            <img src="images/power_bi.jpg" alt="Power BI">
+            <p>Description: Created interactive data visualizations and reports using Power BI Desktop.</p>
+            <p>Technologies: Power BI</p>
+        </div>
+    </section>
+
+    <section id="testimonials" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <div id="testimonial-list" class="testimonial-list">
-            <!-- Add testimonials here dynamically or as a list of quotes -->
+        <div>
+            <p>"Ufuk is a highly skilled professional with a keen eye for detail. His technical expertise and problem-solving abilities are exceptional." - Ahmet Temiz, Former Colleague</p>
+        </div>
+        <div>
+            <p>"Working with Ufuk has been a pleasure. He is dedicated, hardworking, and always willing to go the extra mile." - Ömer Tolun, Project Manager</p>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="blog-list">
-            <a href="blog/post1.html">Blog Post 1</a>
-            <a href="blog/post2.html">Blog Post 2</a>
-            <a href="blog/post3.html">Blog Post 3</a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form" action="contact.php" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            
-            <button type="submit">Send</button>
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <form id="contact-form" action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
+        <p>Email: <a href="mailto:ufuk.ozsoy@powercoders.org">ufuk.ozsoy@powercoders.org</a></p>
+        <p>Phone: +41762188807</p>
+        <p>Address: Roggenweg 8, 5034 Suhr</p>
+
     </section>
 
     <footer>
+        <section id="social-media">
+            <h2>Connect with me</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ufukozsoy/" target="_blank" class="social-icon linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.researchgate.net/profile/Ufuk-Oezsoy" target="_blank" class="social-icon researchgate">
+                    <i class="fab fa-researchgate"></i>
+                </a>
+                <a href="https://github.com/ufukozsoy" target="_blank" class="social-icon github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+        
         <p>&copy; 2024 Ufuk Özsoy. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+ 
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.querySelector(".back-to-top").style.display = "block";
+        } else {
+            document.querySelector(".back-to-top").style.display = "none";
+        }
+    }
+
+    document.querySelector(".back-to-top").addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    });
+</script>
+
+
 </body>
 </html>
