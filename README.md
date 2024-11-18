@@ -1,0 +1,1 @@
+https://ozsoyufuk.netlify.app/
